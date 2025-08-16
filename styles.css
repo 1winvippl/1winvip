@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  position: relative;
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 315px;
+  height: 92%;
+  text-align: center;
+}
+
+.login-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4.5px;
+}
+
+.welcome {
+  font-size: 10.8px;
+  font-weight: lighter;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10.8px;
+  margin-bottom: 13.5px;
+}
+
+.social-icons img {
+  width: 40.5px;
+  height: 40.5px;
+  border-radius: 10.8px;
+  cursor: pointer;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin: 18px 0;
+}
+
+.tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.2px;
+  padding: 9px 14.4px;
+  background-color: #f1f3f6;
+  color: #555;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12.6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-btn img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.tab-btn.active img {
+  filter: brightness(0) invert(1);
+}
+
+.phone-container,
+.input-group {
+  display: flex;
+  align-items: center;
+  border-radius: 7.2px;
+  padding: 9px;
+  background: #f1f3f6;
+  margin-bottom: 10.8px;
+}
+
+.phone-container input,
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 14.4px;
+}
+
+.input-group i {
+  margin-right: 9px;
+  color: #777;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10.8px;
+  border: none;
+  border-radius: 7.2px;
+  background: lightSkyBlue;
+  color: white;
+  font-size: 14.4px;
+  font-weight: bold;
+  cursor: not-allowed;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.login-btn.active {
+  background: #007bff;
+  cursor: pointer;
+}
+
+.login-btn.active:hover {
+  background: #0056b3;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  color: #007bff;
+  font-size: 10.8px;
+  cursor: pointer;
+  text-align: right;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 11.7px;
+  text-align: left;
+  margin-bottom: 7.2px;
+  display: none;
+}
+
+.register-link {
+  margin-top: 14.4px;
+  text-align: center;
+  font-size: 9.9px;
+  color: gray;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-icon {
+  position: absolute;
+  top: 13.5px;
+  right: 13.5px;
+  width: 22.5px;
+  height: 22.5px;
+  background-color: #f1f1f1;
+  border-radius: 25%;
+  font-size: 12.6px;
+  font-weight: bold;
+  color: #666666b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-icon:hover {
+  background-color: #ddd;
+}
+
+/* Phone input flag styling - make it round */
+.iti__flag-container {
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+.iti__flag {
+  border-radius: 50% !important;
+}
+
+.iti__selected-flag {
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+/* Ensure the flag image itself is also rounded */
+.iti__flag img {
+  border-radius: 50% !important;
+}

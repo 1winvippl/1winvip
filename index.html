@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Background Image</title>
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="1styles.css" />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+        /* Fallback if styles.css fails to load */
+        html, body { 
+            height: 100%; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+        }
+        body { 
+            /* background-image: url('project1.png'); */
+            /* background-size: auto;                         */
+            background-position: top center;                           
+            /* background-repeat: no-repeat;                          */
+            background-attachment: fixed;                     
+            margin: 0; 
+            /* height: 98%;                                      */
+        }
+    </style>
+    
+    <!-- Preload the background image for faster first paint -->
+    <link rel="preload" as="image" href="project1.png" />
+    
+    <!-- Open Graph for nicer previews (optional) -->
+    <meta property="og:title" content="Local Background Image" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="project1.png" />
+    <meta property="og:url" content="http://localhost:5500/" />
+    <meta property="og:description" content="A simple page with a full-screen background image." />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Prevent zooming issues on some mobile browsers -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+</head>
+<body>
+    <div class="contain">
+        <img class="land" src="project1.png" alt="">
+    </div>
+    <script>
+        // Make the entire page clickable
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('click', function() {
+                window.location.href = 'subscribe.html';
+            });
+        });
+    </script>
+</body>
+</html>
+
+

